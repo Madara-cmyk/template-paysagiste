@@ -11,8 +11,8 @@ export default function Hero() {
           <em>notre passion.</em>
         </h1>
         <p className="hero__subtitle">
-          Création, aménagement et entretien de jardins et espaces extérieurs.<br />
-          Transformons votre espace en un lieu de vie exceptionnel.
+          Paysagiste professionnel à Paris, Versailles, Saint-Germain-en-Laye et dans toute l'Île-de-France.<br />
+          Création, aménagement et entretien de jardins — du projet à la réalisation.
         </p>
         <div className="hero__actions">
           <a href="#contact" className="btn btn--primary btn--lg">Demander un devis gratuit</a>

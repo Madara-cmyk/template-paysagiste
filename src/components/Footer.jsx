@@ -7,11 +7,15 @@ const LINKS = {
     `Système d\u2019arrosage`,
     'Élagage & abattage',
   ],
-  Entreprise: [
-    'À propos',
-    'Nos engagements',
-    'Certifications',
-    'Recrutement',
+  'Zones d\u2019intervention': [
+    'Paris (75)',
+    'Yvelines (78)',
+    'Seine-et-Marne (77)',
+    'Hauts-de-Seine (92)',
+    'Essonne (91)',
+    'Val-de-Marne (94)',
+    "Val-d\u2019Oise (95)",
+    'Seine-Saint-Denis (93)',
   ],
   Légal: [
     'Mentions légales',

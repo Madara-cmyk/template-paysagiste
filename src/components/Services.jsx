@@ -66,9 +66,9 @@ export default function Services() {
       <div className="container">
         <div className="section-header">
           <span className="section-badge">Ce que nous faisons</span>
-          <h2 className="section-title">Nos services</h2>
+          <h2 className="section-title">Nos services de paysagisme en Île-de-France</h2>
           <p className="section-subtitle">
-            Une offre complète pour créer, embellir et entretenir vos espaces verts avec expertise et passion.
+            Une offre complète pour créer, embellir et entretenir vos espaces verts — jardins privés, terrasses et espaces extérieurs.
           </p>
         </div>
         <div className="services__grid">
