@@ -24,7 +24,7 @@ export default function Header() {
       <div className="header__inner container">
         <a href="#" className="header__logo">
           <svg width="36" height="36" viewBox="0 0 40 40" fill="none" aria-hidden="true">
-            <circle cx="20" cy="20" r="20" fill="#7a1520" />
+            <circle cx="20" cy="20" r="20" fill="#FF6165" />
             <rect x="17" y="10" width="6" height="20" fill="white" rx="1"/>
             <rect x="10" y="17" width="20" height="6" fill="white" rx="1"/>
             <circle cx="20" cy="7"    r="3"   fill="white"/>

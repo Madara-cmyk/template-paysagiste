@@ -6,7 +6,7 @@ const TESTIMONIALS = [
     rating: 5,
     text: `Alexis est intervenu pour l\u2019élagage de nos grands chênes et la remise en état du jardin. Travail impeccable, chantier propre et tarif honnête. Je recommande sans hésiter\u00a0!`,
     initials: 'SM',
-    color: '#7a1520',
+    color: '#c03a3e',
   },
   {
     id: 2,
@@ -15,7 +15,7 @@ const TESTIMONIALS = [
     rating: 5,
     text: `Nous faisons appel à Alexis pour l\u2019entretien de notre jardin depuis 2 ans. Ponctuel, soigneux et toujours de bons conseils. Notre haie n\u2019a jamais été aussi belle.`,
     initials: 'MD',
-    color: '#9b2342',
+    color: '#FF6165',
   },
   {
     id: 3,
@@ -24,7 +24,7 @@ const TESTIMONIALS = [
     rating: 5,
     text: `Notre terrain était complètement en friche. Alexis a tout remis en ordre en deux jours. Résultat bluffant, délai tenu et prix clairement annoncé dès le départ. Merci !`,
     initials: 'IR',
-    color: '#5c0f18',
+    color: '#8a2528',
   },
   {
     id: 4,
@@ -33,7 +33,7 @@ const TESTIMONIALS = [
     rating: 5,
     text: `Débroussaillage d\u2019un grand terrain en pente, vraiment pas facile. Alexis a géré ça avec sérieux et efficacité. Évacuation complète incluse, rien à redire. Très bon rapport qualité-prix.`,
     initials: 'PC',
-    color: '#c44b6e',
+    color: '#e04a4e',
   },
 ]
 

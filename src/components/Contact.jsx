@@ -44,8 +44,8 @@ export default function Contact() {
           <div className="contact__success">
             <div className="contact__success-icon" aria-hidden="true">
               <svg viewBox="0 0 48 48" fill="none" width="48" height="48">
-                <circle cx="24" cy="24" r="24" fill="#fdf0f3" />
-                <path d="M14 24l7 7 13-13" stroke="#7a1520" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+                <circle cx="24" cy="24" r="24" fill="#fff0f0" />
+                <path d="M14 24l7 7 13-13" stroke="#c03a3e" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
             </div>
             <h2>Message envoyé !</h2>
