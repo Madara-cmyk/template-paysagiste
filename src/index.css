@@ -161,15 +161,28 @@ button, input, select, textarea {
   background: var(--color-primary);
   color: var(--white);
   border-color: var(--color-primary);
-  box-shadow: 0 1px 3px rgba(45,106,79,.3);
+  box-shadow: 0 1px 3px rgba(122,21,32,.3);
 }
 .btn--primary:hover {
   background: var(--color-primary-dark);
   border-color: var(--color-primary-dark);
-  box-shadow: 0 4px 12px rgba(45,106,79,.35);
+  box-shadow: 0 4px 12px rgba(122,21,32,.35);
   transform: translateY(-1px);
 }
 .btn--primary:active { transform: translateY(0); }
+
+.hero .btn--primary {
+  background: var(--white);
+  color: var(--color-primary);
+  border-color: var(--white);
+  box-shadow: 0 4px 16px rgba(0,0,0,.2);
+}
+.hero .btn--primary:hover {
+  background: var(--green-50);
+  border-color: var(--green-50);
+  box-shadow: 0 6px 20px rgba(0,0,0,.25);
+  transform: translateY(-1px);
+}
 
 .btn--ghost {
   background: transparent;
