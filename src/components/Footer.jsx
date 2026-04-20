@@ -1,21 +1,19 @@
 const LINKS = {
   Services: [
-    'Création de jardins',
-    'Entretien régulier',
-    'Aménagement extérieur',
-    'Engazonnement',
-    `Système d\u2019arrosage`,
     'Élagage & abattage',
+    'Entretien de jardins',
+    'Taille de haies',
+    'Remise en état',
+    'Débroussaillage',
+    'Évacuation déchets verts',
   ],
   'Zones d\u2019intervention': [
-    'Paris (75)',
-    'Yvelines (78)',
-    'Seine-et-Marne (77)',
-    'Hauts-de-Seine (92)',
-    'Essonne (91)',
-    'Val-de-Marne (94)',
-    "Val-d\u2019Oise (95)",
-    'Seine-Saint-Denis (93)',
+    'Toulouse (31)',
+    'Haute-Garonne (31)',
+    'Tarn-et-Garonne (82)',
+    'Tarn (81)',
+    'Gers (32)',
+    'Ariège (09)',
   ],
   Légal: [
     'Mentions légales',
@@ -31,19 +29,31 @@ export default function Footer() {
         <div className="footer__top">
           <div className="footer__brand">
             <a href="#" className="header__logo footer__logo">
-              <svg width="36" height="36" viewBox="0 0 32 32" fill="none" aria-hidden="true">
-                <circle cx="16" cy="16" r="16" fill="#2d6a4f" />
-                <path d="M16 6 C10 10, 8 16, 10 22 C12 18, 14 16, 16 14 C18 16, 20 18, 22 22 C24 16, 22 10, 16 6Z" fill="#95d5b2" />
-                <rect x="15" y="20" width="2" height="6" rx="1" fill="#1b4332" />
+              <svg width="36" height="36" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+                <circle cx="20" cy="20" r="20" fill="#7a1520" />
+                <rect x="17" y="10" width="6" height="20" fill="white" rx="1"/>
+                <rect x="10" y="17" width="20" height="6" fill="white" rx="1"/>
+                <circle cx="20" cy="7"    r="3"   fill="white"/>
+                <circle cx="15" cy="9.5"  r="2.1" fill="white"/>
+                <circle cx="25" cy="9.5"  r="2.1" fill="white"/>
+                <circle cx="20" cy="33"   r="3"   fill="white"/>
+                <circle cx="15" cy="30.5" r="2.1" fill="white"/>
+                <circle cx="25" cy="30.5" r="2.1" fill="white"/>
+                <circle cx="7"  cy="20"   r="3"   fill="white"/>
+                <circle cx="9.5" cy="15"  r="2.1" fill="white"/>
+                <circle cx="9.5" cy="25"  r="2.1" fill="white"/>
+                <circle cx="33" cy="20"   r="3"   fill="white"/>
+                <circle cx="30.5" cy="15" r="2.1" fill="white"/>
+                <circle cx="30.5" cy="25" r="2.1" fill="white"/>
               </svg>
-              <span>VerdiPro</span>
+              <span>Occitania Gardens</span>
             </a>
             <p className="footer__tagline">
-              Votre paysagiste professionnel en Île-de-France depuis 2009. Qualité, passion et respect de l'environnement.
+              Alexis Jouanny — paysagiste indépendant à Toulouse. Élagage, entretien et remise en état en Occitanie.
             </p>
             <div className="footer__social">
-              {['Facebook', 'Instagram', 'LinkedIn'].map(name => (
-                <a key={name} href="#" className="footer__social-link" aria-label={name}>
+              {[{ name: 'Instagram', href: 'https://www.instagram.com/occitaniagardens/' }].map(({ name, href }) => (
+                <a key={name} href={href} className="footer__social-link" aria-label={name} target="_blank" rel="noopener noreferrer">
                   <svg viewBox="0 0 20 20" fill="currentColor" width="18" height="18" aria-hidden="true">
                     <rect width="20" height="20" rx="4" fill="currentColor" opacity="0.15" />
                     <text x="50%" y="55%" dominantBaseline="middle" textAnchor="middle" fontSize="9" fontWeight="bold" fill="currentColor">{name[0]}</text>
@@ -69,7 +79,7 @@ export default function Footer() {
 
         <div className="footer__bottom">
           <p>© {new Date().getFullYear()} VerdiPro. Tous droits réservés.</p>
-          <p>Fait avec soin — Île-de-France</p>
+          <p>Fait avec soin — Toulouse, Occitanie</p>
         </div>
       </div>
     </footer>

@@ -23,12 +23,24 @@ export default function Header() {
     <header className={`header${scrolled ? ' header--scrolled' : ''}`}>
       <div className="header__inner container">
         <a href="#" className="header__logo">
-          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
-            <circle cx="16" cy="16" r="16" fill="#2d6a4f" />
-            <path d="M16 6 C10 10, 8 16, 10 22 C12 18, 14 16, 16 14 C18 16, 20 18, 22 22 C24 16, 22 10, 16 6Z" fill="#95d5b2" />
-            <rect x="15" y="20" width="2" height="6" rx="1" fill="#1b4332" />
+          <svg width="36" height="36" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+            <circle cx="20" cy="20" r="20" fill="#7a1520" />
+            <rect x="17" y="10" width="6" height="20" fill="white" rx="1"/>
+            <rect x="10" y="17" width="20" height="6" fill="white" rx="1"/>
+            <circle cx="20" cy="7"    r="3"   fill="white"/>
+            <circle cx="15" cy="9.5"  r="2.1" fill="white"/>
+            <circle cx="25" cy="9.5"  r="2.1" fill="white"/>
+            <circle cx="20" cy="33"   r="3"   fill="white"/>
+            <circle cx="15" cy="30.5" r="2.1" fill="white"/>
+            <circle cx="25" cy="30.5" r="2.1" fill="white"/>
+            <circle cx="7"  cy="20"   r="3"   fill="white"/>
+            <circle cx="9.5" cy="15"  r="2.1" fill="white"/>
+            <circle cx="9.5" cy="25"  r="2.1" fill="white"/>
+            <circle cx="33" cy="20"   r="3"   fill="white"/>
+            <circle cx="30.5" cy="15" r="2.1" fill="white"/>
+            <circle cx="30.5" cy="25" r="2.1" fill="white"/>
           </svg>
-          <span className="header__brand">VerdiPro</span>
+          <span className="header__brand">Occitania Gardens</span>
         </a>
 
         <nav className={`header__nav${menuOpen ? ' header__nav--open' : ''}`} aria-label="Navigation principale">

@@ -1,12 +1,9 @@
 const ZONES = [
-  { dept: '75', name: 'Paris', cities: ['Paris 1er–20e', 'Boulogne-Billancourt', 'Neuilly-sur-Seine', 'Levallois-Perret'] },
-  { dept: '78', name: 'Yvelines', cities: ['Versailles', 'Saint-Germain-en-Laye', 'Rambouillet', 'Mantes-la-Jolie'] },
-  { dept: '77', name: 'Seine-et-Marne', cities: ['Fontainebleau', 'Melun', 'Meaux', 'Provins'] },
-  { dept: '92', name: 'Hauts-de-Seine', cities: ['Nanterre', 'Issy-les-Moulineaux', 'Antony', 'Clamart'] },
-  { dept: '91', name: 'Essonne', cities: ['Évry-Courcouronnes', 'Massy', 'Palaiseau', 'Corbeil-Essonnes'] },
-  { dept: '94', name: 'Val-de-Marne', cities: ['Créteil', 'Vincennes', 'Vitry-sur-Seine', 'Champigny-sur-Marne'] },
-  { dept: '93', name: 'Seine-Saint-Denis', cities: ['Montreuil', 'Saint-Denis', 'Aubervilliers', 'Noisy-le-Grand'] },
-  { dept: '95', name: "Val-d'Oise", cities: ['Cergy', 'Pontoise', 'Argenteuil', 'Sarcelles'] },
+  { dept: '31', name: 'Haute-Garonne', cities: ['Toulouse', 'Colomiers', 'Blagnac', 'Muret', 'Tournefeuille', 'Labège'] },
+  { dept: '82', name: 'Tarn-et-Garonne', cities: ['Montauban', 'Castelsarrasin', 'Moissac', 'Grisolles'] },
+  { dept: '81', name: 'Tarn', cities: ['Albi', 'Gaillac', 'Lavaur', 'Castres'] },
+  { dept: '32', name: 'Gers', cities: ['Auch', "L'Isle-Jourdain", 'Gimont', 'Vic-Fezensac'] },
+  { dept: '09', name: 'Ariège', cities: ['Pamiers', 'Foix', 'Saverdun', 'Saint-Girons'] },
 ]
 
 export default function ZoneIntervention() {
@@ -15,9 +12,9 @@ export default function ZoneIntervention() {
       <div className="container">
         <div className="section-header">
           <span className="section-badge">Déplacement inclus</span>
-          <h2 className="section-title">Zone d'intervention en Île-de-France</h2>
+          <h2 className="section-title">Zone d'intervention — Toulouse & Occitanie</h2>
           <p className="section-subtitle">
-            Nous intervenons dans les 8 départements franciliens. Particuliers, copropriétés et entreprises.
+            Alexis intervient dans toute la Haute-Garonne et les départements voisins. Particuliers, copropriétés et entreprises.
           </p>
         </div>
         <div className="zones__grid">
@@ -37,7 +34,7 @@ export default function ZoneIntervention() {
         </div>
         <p className="zones__note">
           Votre ville n'est pas listée ?{' '}
-          <a href="#contact">Contactez-nous</a>, nous étudions toute demande en Île-de-France.
+          <a href="#contact">Contactez Alexis</a>, il étudie toute demande en Occitanie.
         </p>
       </div>
     </section>

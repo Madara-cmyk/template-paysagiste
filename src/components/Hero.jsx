@@ -5,14 +5,14 @@ export default function Hero() {
         <div className="hero__bg-overlay" />
       </div>
       <div className="hero__content container">
-        <span className="hero__badge">Paysagiste certifié · Île-de-France</span>
+        <span className="hero__badge">Paysagiste · Toulouse & Occitanie</span>
         <h1 className="hero__title">
           Votre jardin,<br />
-          <em>notre passion.</em>
+          <em>entre de bonnes mains.</em>
         </h1>
         <p className="hero__subtitle">
-          Paysagiste professionnel à Paris, Versailles, Saint-Germain-en-Laye et dans toute l'Île-de-France.<br />
-          Création, aménagement et entretien de jardins — du projet à la réalisation.
+          Élagage, entretien, taille de haies et remise en état à Toulouse et dans toute la région.<br />
+          Alexis Jouanny — paysagiste indépendant, réactif et soigneux.
         </p>
         <div className="hero__actions">
           <a href="#contact" className="btn btn--primary btn--lg">Demander un devis gratuit</a>
