@@ -22,7 +22,7 @@ const LINKS = {
   ],
 }
 
-export default function Footer() {
+export default function Footer({ onOpenModal }) {
   return (
     <footer className="footer">
       <div className="container">
@@ -53,7 +53,15 @@ export default function Footer() {
                 <h3 className="footer__nav-title">{group}</h3>
                 <ul>
                   {items.map(item => (
-                    <li key={item}><a href="#">{item}</a></li>
+                    <li key={item}>
+                      {item === 'Mentions légales' ? (
+                        <button onClick={() => onOpenModal('mentions')} className="footer__legal-btn">{item}</button>
+                      ) : item === 'Politique de confidentialité' ? (
+                        <button onClick={() => onOpenModal('confidentialite')} className="footer__legal-btn">{item}</button>
+                      ) : (
+                        <a href="#">{item}</a>
+                      )}
+                    </li>
                   ))}
                 </ul>
               </div>

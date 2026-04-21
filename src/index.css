@@ -1124,13 +1124,24 @@ button, input, select, textarea {
   gap: var(--space-3);
 }
 
-.footer__nav a {
+.footer__nav a,
+.footer__legal-btn {
   font-size: var(--font-size-sm);
   color: rgba(255,255,255,.55);
   transition: color var(--duration-fast);
 }
 
-.footer__nav a:hover { color: var(--white); }
+.footer__legal-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  font-family: inherit;
+  text-align: left;
+}
+
+.footer__nav a:hover,
+.footer__legal-btn:hover { color: var(--white); }
 
 /* ===================================================
    ZONES D'INTERVENTION
@@ -1226,6 +1237,96 @@ button, input, select, textarea {
 }
 
 .zones__note a:hover { color: var(--green-700); }
+
+/* ===================================================
+   FOOTER (suite)
+   =================================================== */
+/* ===================================================
+   LEGAL MODAL
+   =================================================== */
+.legal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,.5);
+  z-index: 200;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: var(--space-4);
+  backdrop-filter: blur(4px);
+}
+
+@media (min-width: 640px) {
+  .legal-overlay { align-items: center; }
+}
+
+.legal-modal {
+  background: var(--white);
+  border-radius: var(--radius-xl);
+  width: 100%;
+  max-width: 680px;
+  max-height: 85vh;
+  display: flex;
+  flex-direction: column;
+  box-shadow: var(--shadow-xl);
+}
+
+.legal-modal__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-6) var(--space-8);
+  border-bottom: 1px solid var(--color-border);
+  flex-shrink: 0;
+}
+
+.legal-modal__title {
+  font-size: var(--font-size-xl);
+  font-weight: 700;
+  color: var(--color-text-heading);
+}
+
+.legal-modal__close {
+  background: var(--gray-100);
+  border: none;
+  border-radius: var(--radius-full);
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: var(--gray-600);
+  transition: background var(--duration-fast), color var(--duration-fast);
+  flex-shrink: 0;
+}
+.legal-modal__close:hover { background: var(--gray-200); color: var(--gray-900); }
+
+.legal-modal__body {
+  overflow-y: auto;
+  padding: var(--space-8);
+  flex: 1;
+}
+
+.legal-content h3 {
+  font-size: var(--font-size-base);
+  font-weight: 700;
+  color: var(--color-text-heading);
+  margin-top: var(--space-6);
+  margin-bottom: var(--space-2);
+}
+.legal-content h3:first-child { margin-top: 0; }
+
+.legal-content p, .legal-content ul {
+  font-size: var(--font-size-sm);
+  color: var(--color-text);
+  line-height: 1.7;
+  margin-bottom: var(--space-3);
+}
+.legal-content ul { padding-left: var(--space-5); }
+.legal-content li { margin-bottom: var(--space-1); }
+.legal-content a { color: var(--green-600); text-decoration: underline; text-underline-offset: 2px; }
+.legal-content em { color: var(--gray-400); font-style: italic; }
 
 /* ===================================================
    FOOTER (suite)
