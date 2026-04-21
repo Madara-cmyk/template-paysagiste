@@ -1,9 +1,9 @@
-const ZONES = [
-  { dept: '31', name: 'Haute-Garonne', cities: ['Toulouse', 'Colomiers', 'Blagnac', 'Muret', 'Tournefeuille', 'Labège'] },
-  { dept: '82', name: 'Tarn-et-Garonne', cities: ['Montauban', 'Castelsarrasin', 'Moissac', 'Grisolles'] },
-  { dept: '81', name: 'Tarn', cities: ['Albi', 'Gaillac', 'Lavaur', 'Castres'] },
-  { dept: '32', name: 'Gers', cities: ['Auch', "L'Isle-Jourdain", 'Gimont', 'Vic-Fezensac'] },
-  { dept: '09', name: 'Ariège', cities: ['Pamiers', 'Foix', 'Saverdun', 'Saint-Girons'] },
+const CITIES = [
+  'Toulouse', 'Colomiers', 'Blagnac', 'Tournefeuille', 'Muret',
+  'Labège', 'Castanet-Tolosan', 'Ramonville-Saint-Agne', 'L\'Union',
+  'Balma', 'Portet-sur-Garonne', 'Plaisance-du-Touch', 'Cugnaux',
+  'Léguevin', 'Pibrac', 'Aussonne', 'Fenouillet', 'Saint-Alban',
+  'Aucamville', 'Cornebarrieu',
 ]
 
 export default function ZoneIntervention() {
@@ -12,29 +12,19 @@ export default function ZoneIntervention() {
       <div className="container">
         <div className="section-header">
           <span className="section-badge">Déplacement inclus</span>
-          <h2 className="section-title">Zone d'intervention — Toulouse & Occitanie</h2>
+          <h2 className="section-title">Zone d'intervention — Toulouse & Haute-Garonne</h2>
           <p className="section-subtitle">
-            Alexis intervient dans toute la Haute-Garonne et les départements voisins. Particuliers, copropriétés et entreprises.
+            Alexis intervient à Toulouse et dans toute la Haute-Garonne (31). Particuliers, copropriétés et entreprises.
           </p>
         </div>
-        <div className="zones__grid">
-          {ZONES.map(({ dept, name, cities }) => (
-            <div className="zone-card" key={dept}>
-              <div className="zone-card__header">
-                <span className="zone-card__dept">{dept}</span>
-                <h3 className="zone-card__name">{name}</h3>
-              </div>
-              <ul className="zone-card__cities">
-                {cities.map(city => (
-                  <li key={city}>{city}</li>
-                ))}
-              </ul>
-            </div>
+        <div className="zones__cities-grid">
+          {CITIES.map(city => (
+            <div className="zone-city" key={city}>{city}</div>
           ))}
         </div>
         <p className="zones__note">
           Votre ville n'est pas listée ?{' '}
-          <a href="#contact">Contactez Alexis</a>, il étudie toute demande en Occitanie.
+          <a href="#contact">Contactez Alexis</a>, il étudie toute demande en Haute-Garonne.
         </p>
       </div>
     </section>

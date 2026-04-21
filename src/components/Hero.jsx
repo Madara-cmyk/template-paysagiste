@@ -103,11 +103,6 @@ export default function Hero() {
           </div>
           <div className="hero__stat-divider" aria-hidden="true" />
           <div className="hero__stat">
-            <strong>15 ans</strong>
-            <span>D'expérience</span>
-          </div>
-          <div className="hero__stat-divider" aria-hidden="true" />
-          <div className="hero__stat">
             <strong>98%</strong>
             <span>Clients satisfaits</span>
           </div>

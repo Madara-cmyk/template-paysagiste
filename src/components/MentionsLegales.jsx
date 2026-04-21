@@ -9,7 +9,7 @@ export default function MentionsLegales() {
         Téléphone : 06 32 69 19 94<br />
         Email : contactoccitaniagardens@gmail.com<br />
         Zone d'intervention : Toulouse et région Occitanie<br />
-        SIRET : <em>[À compléter]</em>
+        SIRET : 94493829900012
       </p>
 
       <h3>2. Hébergement</h3>
