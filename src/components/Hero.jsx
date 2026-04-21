@@ -4,8 +4,10 @@ export default function Hero() {
     <section className="hero" id="accueil">
       <div className="hero__bg" aria-hidden="true">
         <div className="hero__bg-overlay" />
-        <div className="hero__cherry hero__cherry--left"><img src="/Cerisier.png" alt="" /></div>
-        <div className="hero__cherry hero__cherry--right"><img src="/Cerisier.png" alt="" /></div>
+        <div className="hero__cherry hero__cherry--top-left"><img src="/Cerisier.png" alt="" /></div>
+        <div className="hero__cherry hero__cherry--top-right"><img src="/Cerisier.png" alt="" /></div>
+        <div className="hero__cherry hero__cherry--bottom-left"><img src="/Cerisier.png" alt="" /></div>
+        <div className="hero__cherry hero__cherry--bottom-right"><img src="/Cerisier.png" alt="" /></div>
       </div>
       <div className="hero__content container">
         <span className="hero__badge">Paysagiste · Toulouse & Occitanie</span>

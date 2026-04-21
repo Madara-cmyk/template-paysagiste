@@ -440,15 +440,21 @@ button, input, select, textarea {
 .hero__cherry {
   position: absolute;
   pointer-events: none;
-  opacity: 0.72;
-  width: 520px;
 }
-.hero__cherry--left  { top: 0; left: -60px; }
-.hero__cherry--right { top: 0; right: -60px; transform: scaleX(-1); }
-.hero__cherry img    { width: 100%; height: auto; }
+.hero__cherry img { width: 100%; height: auto; }
 
-@media (max-width: 1024px) { .hero__cherry { width: 360px; opacity: 0.5; } }
-@media (max-width: 640px)  { .hero__cherry { display: none; } }
+.hero__cherry--top-left    { top: 0;    left: -60px;  width: 520px; opacity: 0.72; }
+.hero__cherry--top-right   { top: 0;    right: -60px; width: 460px; opacity: 0.65; transform: scaleX(-1); }
+.hero__cherry--bottom-left { bottom: 0; left: -80px;  width: 400px; opacity: 0.55; transform: scaleY(-1); }
+.hero__cherry--bottom-right{ bottom: 0; right: -50px; width: 480px; opacity: 0.6;  transform: scale(-1, -1); }
+
+@media (max-width: 1024px) {
+  .hero__cherry--top-left    { width: 340px; }
+  .hero__cherry--top-right   { width: 300px; }
+  .hero__cherry--bottom-left { width: 260px; }
+  .hero__cherry--bottom-right{ width: 310px; }
+}
+@media (max-width: 640px) { .hero__cherry { display: none; } }
 
 .hero__content {
   position: relative;
