@@ -5,6 +5,7 @@ import Services from './components/Services'
 import Gallery from './components/Gallery'
 import Testimonials from './components/Testimonials'
 import ZoneIntervention from './components/ZoneIntervention'
+import FAQ from './components/FAQ'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 import LegalModal from './components/LegalModal'
@@ -23,6 +24,7 @@ export default function App() {
         <Gallery />
         <Testimonials />
         <ZoneIntervention />
+        <FAQ />
         <Contact />
       </main>
       <Footer onOpenModal={setModal} />

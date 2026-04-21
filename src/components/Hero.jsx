@@ -89,8 +89,8 @@ export default function Hero() {
           <em>entre de bonnes mains.</em>
         </h1>
         <p className="hero__subtitle">
-          Élagage, entretien, taille de haies et remise en état à Toulouse et dans toute la région.<br />
-          Alexis Jouanny — paysagiste indépendant, réactif et soigneux.
+          Paysagiste indépendant à Toulouse — élagage, entretien de jardins, taille de haies, débroussaillage et remise en état en Haute-Garonne et Occitanie.<br />
+          Alexis Jouanny : réactif, soigneux, devis gratuit sous 48h.
         </p>
         <div className="hero__actions">
           <a href="#contact" className="btn btn--primary btn--lg">Demander un devis gratuit</a>

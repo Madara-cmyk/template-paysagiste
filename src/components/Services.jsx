@@ -9,7 +9,7 @@ const SERVICES = [
       </svg>
     ),
     title: 'Élagage & abattage',
-    description: "Élagage raisonné, recépage et abattage sécurisé de tous types d'arbres. Évacuation des déchets incluse.",
+    description: "Élagage raisonné, recépage et abattage sécurisé de tous types d'arbres à Toulouse et en Occitanie. Intervention en hauteur, évacuation des déchets incluse.",
   },
   {
     icon: (
@@ -20,7 +20,7 @@ const SERVICES = [
       </svg>
     ),
     title: 'Entretien de jardins',
-    description: 'Tonte, désherbage, débroussaillage et soins saisonniers pour un jardin toujours impeccable.',
+    description: 'Tonte, désherbage, taille et soins saisonniers pour particuliers et copropriétés en Haute-Garonne. Contrat d\'entretien régulier ou intervention ponctuelle.',
   },
   {
     icon: (
@@ -33,7 +33,7 @@ const SERVICES = [
       </svg>
     ),
     title: 'Taille de haies',
-    description: 'Taille précise de haies, arbustes et massifs. Travail soigné avec finitions nettes et évacuation complète.',
+    description: 'Taille précise de haies, arbustes et massifs autour de Toulouse. Finitions nettes, respect des périodes de nidification, évacuation complète incluse.',
   },
   {
     icon: (
@@ -45,7 +45,7 @@ const SERVICES = [
       </svg>
     ),
     title: 'Remise en état',
-    description: "Jardins à l'abandon, terrains en friche, espaces négligés : remise en ordre complète avec résultat visible dès le premier passage.",
+    description: "Jardins à l'abandon, terrains en friche en Occitanie : désherbage, déblaiement et remise en ordre complète. Résultat visible dès le premier passage.",
   },
   {
     icon: (
@@ -55,7 +55,7 @@ const SERVICES = [
       </svg>
     ),
     title: 'Débroussaillage',
-    description: 'Débroussaillage de terrains, talus et zones difficiles. Intervention rapide, même sur grandes surfaces.',
+    description: 'Débroussaillage obligatoire en zone à risque incendie (Haute-Garonne, Ariège, Tarn). Intervention rapide sur terrains, talus et grandes surfaces.',
   },
   {
     icon: (
