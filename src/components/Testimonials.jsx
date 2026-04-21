@@ -51,7 +51,7 @@ function StarRating({ count }) {
 
 export default function Testimonials() {
   return (
-    <section className="testimonials section" id="temoignages">
+    <section className="testimonials section section--alt" id="temoignages">
       <div className="container">
         <div className="section-header">
           <span className="section-badge">Ce qu'ils disent</span>

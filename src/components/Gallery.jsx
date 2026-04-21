@@ -104,7 +104,7 @@ function BeforeAfterSlider({ before, after }) {
 
 export default function Gallery() {
   return (
-    <section className="gallery section section--alt" id="galerie">
+    <section className="gallery section" id="galerie">
       <div className="container">
         <div className="section-header">
           <span className="section-badge">Nos réalisations</span>

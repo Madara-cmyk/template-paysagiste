@@ -70,7 +70,7 @@ const SERVICES = [
 
 export default function Services() {
   return (
-    <section className="services section" id="services">
+    <section className="services section section--alt" id="services">
       <div className="container">
         <div className="section-header">
           <span className="section-badge">Ce que nous faisons</span>
