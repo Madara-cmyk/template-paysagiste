@@ -7,18 +7,17 @@ const LINKS = {
     'Débroussaillage',
     'Évacuation déchets verts',
   ],
-  'Zones d\u2019intervention': [
-    'Toulouse (31)',
+  'Zone d\u2019intervention': [
+    'Toulouse',
+    'Colomiers',
+    'Blagnac',
+    'Muret',
+    'Tournefeuille',
     'Haute-Garonne (31)',
-    'Tarn-et-Garonne (82)',
-    'Tarn (81)',
-    'Gers (32)',
-    'Ariège (09)',
   ],
   Légal: [
     'Mentions légales',
     'Politique de confidentialité',
-    'CGV',
   ],
 }
 
@@ -29,21 +28,31 @@ export default function Footer({ onOpenModal }) {
         <div className="footer__top">
           <div className="footer__brand">
             <a href="#" className="header__logo footer__logo">
-              <img src="/Logo.png" alt="Occitania Gardens" width="44" height="44" style={{objectFit:'contain', filter:'brightness(0) invert(1)'}} />
+              <span className="footer__logo-img">
+                <img src="/Logo.png" alt="Occitania Gardens" width="40" height="40" style={{objectFit:'contain'}} />
+              </span>
               <span>Occitania Gardens</span>
             </a>
             <p className="footer__tagline">
-              Alexis Jouanny — paysagiste indépendant à Toulouse. Élagage, entretien et remise en état en Occitanie.
+              Alexis Jouanny — paysagiste indépendant à Toulouse. Élagage, entretien et remise en état en Haute-Garonne.
             </p>
-            <div className="footer__social">
-              {[{ name: 'Instagram', href: 'https://www.instagram.com/occitaniagardens/' }].map(({ name, href }) => (
-                <a key={name} href={href} className="footer__social-link" aria-label={name} target="_blank" rel="noopener noreferrer">
-                  <svg viewBox="0 0 20 20" fill="currentColor" width="18" height="18" aria-hidden="true">
-                    <rect width="20" height="20" rx="4" fill="currentColor" opacity="0.15" />
-                    <text x="50%" y="55%" dominantBaseline="middle" textAnchor="middle" fontSize="9" fontWeight="bold" fill="currentColor">{name[0]}</text>
-                  </svg>
-                </a>
-              ))}
+
+            <div className="footer__social-block">
+              <p className="footer__social-label">Suivez-nous sur les réseaux</p>
+              <a
+                href="https://www.instagram.com/occitaniagardens/"
+                className="footer__instagram-btn"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram Occitania Gardens"
+              >
+                <svg viewBox="0 0 24 24" fill="none" width="20" height="20" aria-hidden="true">
+                  <rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" strokeWidth="1.8"/>
+                  <circle cx="12" cy="12" r="5" stroke="currentColor" strokeWidth="1.8"/>
+                  <circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/>
+                </svg>
+                @occitaniagardens
+              </a>
             </div>
           </div>
 
@@ -70,8 +79,8 @@ export default function Footer({ onOpenModal }) {
         </div>
 
         <div className="footer__bottom">
-          <p>© {new Date().getFullYear()} VerdiPro. Tous droits réservés.</p>
-          <p>Fait avec soin — Toulouse, Occitanie</p>
+          <p>© {new Date().getFullYear()} Occitania Gardens. Tous droits réservés.</p>
+          <p>Fait avec soin — Toulouse, Haute-Garonne</p>
         </div>
       </div>
     </footer>
