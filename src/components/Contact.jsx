@@ -13,6 +13,7 @@ const SERVICES_OPTIONS = [
 export default function Contact() {
   const [form, setForm] = useState({ name: '', email: '', phone: '', service: '', message: '' })
   const [submitted, setSubmitted] = useState(false)
+  const [loading, setLoading] = useState(false)
   const [errors, setErrors] = useState({})
 
   const validate = () => {
@@ -30,11 +31,33 @@ export default function Contact() {
     if (errors[name]) setErrors(er => ({ ...er, [name]: undefined }))
   }
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault()
     const e2 = validate()
     if (Object.keys(e2).length) { setErrors(e2); return }
-    setSubmitted(true)
+    setLoading(true)
+    try {
+      const res = await fetch('https://formspree.io/f/mdaylpqz', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+        body: JSON.stringify({
+          name: form.name,
+          email: form.email,
+          phone: form.phone || '—',
+          service: form.service,
+          message: form.message,
+        }),
+      })
+      if (res.ok) {
+        setSubmitted(true)
+      } else {
+        setErrors({ submit: 'Une erreur est survenue. Veuillez réessayer ou appeler directement.' })
+      }
+    } catch {
+      setErrors({ submit: 'Impossible d\'envoyer le message. Vérifiez votre connexion.' })
+    } finally {
+      setLoading(false)
+    }
   }
 
   if (submitted) {
@@ -129,11 +152,14 @@ export default function Contact() {
               <textarea id="message" name="message" rows="5" value={form.message} onChange={handleChange} placeholder="Surface estimée, type de travaux souhaités, contraintes particulières…" />
               {errors.message && <span className="form-error" role="alert">{errors.message}</span>}
             </div>
-            <button type="submit" className="btn btn--primary btn--full">
-              Envoyer ma demande
-              <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="2" width="18" height="18" aria-hidden="true">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
-              </svg>
+            {errors.submit && <p className="form-error" role="alert" style={{marginBottom:'0.5rem'}}>{errors.submit}</p>}
+            <button type="submit" className="btn btn--primary btn--full" disabled={loading}>
+              {loading ? 'Envoi en cours…' : 'Envoyer ma demande'}
+              {!loading && (
+                <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="2" width="18" height="18" aria-hidden="true">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
+                </svg>
+              )}
             </button>
             <p className="form-notice">* Champs obligatoires. Vos données sont traitées en toute confidentialité.</p>
           </form>
