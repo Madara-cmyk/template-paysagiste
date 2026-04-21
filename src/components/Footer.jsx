@@ -29,22 +29,20 @@ export default function Footer() {
         <div className="footer__top">
           <div className="footer__brand">
             <a href="#" className="header__logo footer__logo">
-              <svg width="36" height="36" viewBox="0 0 40 40" fill="none" aria-hidden="true">
-                <circle cx="20" cy="20" r="20" fill="#FF6165" />
-                <rect x="17" y="10" width="6" height="20" fill="white" rx="1"/>
-                <rect x="10" y="17" width="20" height="6" fill="white" rx="1"/>
-                <circle cx="20" cy="7"    r="3"   fill="white"/>
-                <circle cx="15" cy="9.5"  r="2.1" fill="white"/>
-                <circle cx="25" cy="9.5"  r="2.1" fill="white"/>
-                <circle cx="20" cy="33"   r="3"   fill="white"/>
-                <circle cx="15" cy="30.5" r="2.1" fill="white"/>
-                <circle cx="25" cy="30.5" r="2.1" fill="white"/>
-                <circle cx="7"  cy="20"   r="3"   fill="white"/>
-                <circle cx="9.5" cy="15"  r="2.1" fill="white"/>
-                <circle cx="9.5" cy="25"  r="2.1" fill="white"/>
-                <circle cx="33" cy="20"   r="3"   fill="white"/>
-                <circle cx="30.5" cy="15" r="2.1" fill="white"/>
-                <circle cx="30.5" cy="25" r="2.1" fill="white"/>
+              <svg width="38" height="38" viewBox="0 0 100 100" aria-hidden="true">
+                <path d="M42 22 H58 V42 H78 V58 H58 V78 H42 V58 H22 V42 H42 Z" fill="white"/>
+                <circle cx="50" cy="13" r="8"  fill="white"/>
+                <circle cx="39" cy="19" r="6"  fill="white"/>
+                <circle cx="61" cy="19" r="6"  fill="white"/>
+                <circle cx="50" cy="87" r="8"  fill="white"/>
+                <circle cx="39" cy="81" r="6"  fill="white"/>
+                <circle cx="61" cy="81" r="6"  fill="white"/>
+                <circle cx="13" cy="50" r="8"  fill="white"/>
+                <circle cx="19" cy="39" r="6"  fill="white"/>
+                <circle cx="19" cy="61" r="6"  fill="white"/>
+                <circle cx="87" cy="50" r="8"  fill="white"/>
+                <circle cx="81" cy="39" r="6"  fill="white"/>
+                <circle cx="81" cy="61" r="6"  fill="white"/>
               </svg>
               <span>Occitania Gardens</span>
             </a>
