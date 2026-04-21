@@ -23,21 +23,7 @@ export default function Header() {
     <header className={`header${scrolled ? ' header--scrolled' : ''}`}>
       <div className="header__inner container">
         <a href="#" className="header__logo">
-          <svg width="38" height="38" viewBox="0 0 100 100" aria-hidden="true">
-            <path d="M42 22 H58 V42 H78 V58 H58 V78 H42 V58 H22 V42 H42 Z" fill="#1a1a1a"/>
-            <circle cx="50" cy="13" r="8"  fill="#1a1a1a"/>
-            <circle cx="39" cy="19" r="6"  fill="#1a1a1a"/>
-            <circle cx="61" cy="19" r="6"  fill="#1a1a1a"/>
-            <circle cx="50" cy="87" r="8"  fill="#1a1a1a"/>
-            <circle cx="39" cy="81" r="6"  fill="#1a1a1a"/>
-            <circle cx="61" cy="81" r="6"  fill="#1a1a1a"/>
-            <circle cx="13" cy="50" r="8"  fill="#1a1a1a"/>
-            <circle cx="19" cy="39" r="6"  fill="#1a1a1a"/>
-            <circle cx="19" cy="61" r="6"  fill="#1a1a1a"/>
-            <circle cx="87" cy="50" r="8"  fill="#1a1a1a"/>
-            <circle cx="81" cy="39" r="6"  fill="#1a1a1a"/>
-            <circle cx="81" cy="61" r="6"  fill="#1a1a1a"/>
-          </svg>
+          <img src="/Logo.png" alt="Occitania Gardens" width="44" height="44" style={{objectFit:'contain'}} />
           <span className="header__brand">Occitania Gardens</span>
         </a>
 
